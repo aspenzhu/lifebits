@@ -4,43 +4,63 @@ body {
     padding: 0;
 }
 
+.container{
+    max-width: 600px; /* 设置最大宽度 */
+    margin: 0 auto;    /* 居中 */
+    padding: 0 80px;    /* 左右各留出 20px 间距 */
+}
+
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.actions button, .actions a {
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 20px;
+    margin-top: 100px;
 }
 
-.article-list {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-article {
+.article {
     border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
 }
 
-article img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.article-info h2 {
+    margin: 0;
+    color: #333;
+}
+.article h2{
+    font-size: 16px;
+}
+.date{
+    font-size: 14px;
 }
 
-.article-detail {
-    max-width: 600px;
-    margin: 0 auto;
+.date {
+    color: #777;
 }
-
-.article-detail img {
-    width: 100%;
-    border-radius: 5px;
+footer{
+    font-size: 16px;
+    color: rgb(63, 64, 67);
+    padding: 20px;
+    text-align: center;
 }

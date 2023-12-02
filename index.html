@@ -4,29 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>博客首页</title>
+    <title>LifeBits</title>
 </head>
-<body>
+<body class="container">
     <header>
-        <h1>我的博客</h1>
+        <div class="title">LifeBits</div>
+        <div class="actions">
+            <button onclick="toggleDarkMode()">暗黑模式</button>
+            <a href="about.html">关于我</a>
+        </div>
     </header>
 
     <main>
-        <section class="article-list">
-            <article>
-                <img src="image1.jpg" alt="Article Image">
-                <h2><a href="article1.html">hello</a></h2>
-                <p>文章摘要或简介...</p>
-            </article>
+        <section class="content">
+            <!-- Article List -->
+            <div class="article" onclick="viewArticle('article1.html')">
+                <div class="article-info">
+                    <h2>文章标题 1</h2>
+                    <p class="date">2023-12-01</p>
+                </div>
+            </div>
 
-            <article>
-                <img src="image2.jpg" alt="Article Image">
-                <h2><a href="article2.html">文章标题2</a></h2>
-                <p>文章摘要或简介...</p>
-            </article>
+            <div class="article" onclick="viewArticle('article2.html')">
+                <div class="article-info">
+                    <h2>文章标题 2</h2>
+                    <p class="date">2023-12-02</p>
+                </div>
+            </div>
 
-            <!-- 添加更多文章... -->
+            <div class="article" onclick="viewArticle('article3.html')">
+                <div class="article-info">
+                    <h2>文章标题 3</h2>
+                    <p class="date">2023-12-02</p>
+                </div>
+            </div>
+
+            <!-- More articles... -->
+
         </section>
     </main>
+
+    <footer>
+        <p>人来又人往，清风吹斜阳。</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
