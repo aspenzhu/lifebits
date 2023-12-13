@@ -2,10 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;/* 让 body 高度至少占满整个窗口 */
+    display: flex;
+    flex-direction: column;
+   
 }
 
 .container{
-    max-width: 600px; /* 设置最大宽度 */
+    max-width: 648px; /* 设置最大宽度 */
     margin: 0 auto;    /* 居中 */
     padding: 0 80px;    /* 左右各留出 20px 间距 */
 }
@@ -37,30 +41,32 @@ main {
     margin-top: 100px;
 }
 
+/* 设置文章列表样式 */
 .article {
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding: 10px;
+    
+    padding: 8px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.article-info h2 {
-    margin: 0;
-    color: #333;
-}
 .article h2{
     font-size: 16px;
+    margin: 0;
 }
 .date{
-    font-size: 14px;
+    font-size: 16px;
+    color: #777;
+    margin: 0;
 }
 
-.date {
-    color: #777;
-}
+/* 设置footer样式 */
 footer{
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(63, 64, 67);
     padding: 20px;
     text-align: center;
+    margin-top: auto;/* 将 footer 推到 flex 容器的底部 */
+
 }

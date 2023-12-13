@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #333;
+    padding-left: 200px;
+}
+
+main {
+    max-width: 648px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.article-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.article-date {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
