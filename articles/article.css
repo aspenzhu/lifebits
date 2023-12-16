@@ -12,7 +12,6 @@ header {
 .back-button {
     text-decoration: none;
     color: #333;
-    padding-left: 200px;
 }
 
 main {
@@ -24,11 +23,18 @@ main {
 .article-title {
     font-size: 24px;
     margin-bottom: 8px;
+    color: #333333;
 }
 
 .article-date {
-    color: #777;
+    color: #525252;
     margin-bottom: 20px;
+}
+
+.article-content p{
+    font-size: 15px;
+    color:#333333;
+    margin:1.5rem 0;
 }
 
 
