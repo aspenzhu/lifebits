@@ -37,6 +37,19 @@ header {
     text-decoration: none;
 }
 
+/* 设置暗黑模式 */
+body.dark-mode{
+    background-color: #000000;
+    color: #ffffff;
+}
+body.dark-mode header{
+    color:#fff;
+}
+body.dark-mode header a.button{
+    color: #fff;
+}
+
+
 main {
     padding: 20px;
     margin-top: 100px;
